@@ -1,5 +1,3 @@
-using System;
-
 namespace HospitalManagementApi.Domain.Entities;
 
 public class AppointmentPayment: Payment

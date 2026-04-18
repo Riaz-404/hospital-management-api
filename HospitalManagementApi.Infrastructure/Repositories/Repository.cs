@@ -1,4 +1,3 @@
-using System;
 using System.Linq.Expressions;
 using HospitalManagementApi.Domain.Common;
 using HospitalManagementApi.Infrastructure.Data;

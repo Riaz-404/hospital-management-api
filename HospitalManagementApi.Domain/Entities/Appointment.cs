@@ -1,4 +1,3 @@
-using System;
 using HospitalManagementApi.Domain.Common;
 
 namespace HospitalManagementApi.Domain.Entities;

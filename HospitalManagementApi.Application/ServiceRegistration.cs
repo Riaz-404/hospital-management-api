@@ -1,4 +1,3 @@
-using System;
 using HospitalManagementApi.Application.Mapping;
 using Microsoft.Extensions.DependencyInjection;
 

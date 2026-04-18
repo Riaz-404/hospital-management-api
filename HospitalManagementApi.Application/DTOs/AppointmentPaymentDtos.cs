@@ -1,4 +1,3 @@
-using System;
 using HospitalManagementApi.Domain.Entities;
 
 namespace HospitalManagementApi.Application.DTOs;

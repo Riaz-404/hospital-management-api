@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Mapping/" />
+    <Folder Include="Service/" />
   </ItemGroup>
 
   <PropertyGroup>

@@ -1,5 +1,3 @@
-using System;
-
 namespace HospitalManagementApi.Application.DTOs;
 
 public class CreateConsultationDto
