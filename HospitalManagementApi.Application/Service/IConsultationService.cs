@@ -5,7 +5,7 @@ namespace HospitalManagementApi.Application.Service;
 
 public interface IConsultationService
 {
-    Task<ConsultationDto?> GetConsultationByIdAsync(int id);
+    Task<ConsultationWithDetailsDto?> GetConsultationByIdAsync(int id);
     Task<IEnumerable<ConsultationDto>> GetAllConsultationsAsync();
     Task<ConsultationDto> CreateConsultationAsync(CreateConsultationDto createConsultationDto);
     Task<ConsultationDto> UpdateConsultationAsync(UpdateConsultationDto updateConsultationDto);

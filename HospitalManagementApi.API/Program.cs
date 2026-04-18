@@ -18,6 +18,9 @@ builder.Services.AddApplicationServices();
 
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
+// Add Controllers
+builder.Services.AddControllers();
+
 // ==================== CORS Configuration ====================
 builder.Services.AddCors(options =>
 {

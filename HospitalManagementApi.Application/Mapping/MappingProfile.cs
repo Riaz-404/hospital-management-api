@@ -17,6 +17,8 @@ public class MappingProfile: Profile
         CreateMap<Doctor, DoctorDto>().ReverseMap();
         CreateMap<CreateDoctorDto, Doctor>();
         CreateMap<UpdateDoctorDto, Doctor>();
+        CreateMap<Doctor, DoctorWithDetailsDto>().ReverseMap();
+
 
         // Appointment mappings
         CreateMap<Appointment, AppointmentDto>().ReverseMap();
@@ -24,9 +26,11 @@ public class MappingProfile: Profile
         CreateMap<UpdateAppointmentDto, Appointment>();
 
         // Consultation mappings
-        CreateMap<Consultation, ConsultationDto>().ReverseMap();
+        CreateMap<Consultation, ConsultationDto>();
         CreateMap<CreateConsultationDto, Consultation>();
         CreateMap<UpdateConsultationDto, Consultation>();
+        CreateMap<Consultation, ConsultationWithDetailsDto>()
+            .IncludeBase<Consultation, ConsultationDto>();
 
         // Test mappings
         CreateMap<Test, TestDto>().ReverseMap();

@@ -80,7 +80,7 @@ public class ConsultantService : IConsultationService
         return _mapper.Map<IEnumerable<ConsultationDto>>(consultations);
     }
 
-    public async Task<ConsultationDto?> GetConsultationByIdAsync(int id)
+    public async Task<ConsultationWithDetailsDto?> GetConsultationByIdAsync(int id)
     {
         var consultation = await _hospitalDbContext.Consultations
             .Include(c => c.Patient)
@@ -89,7 +89,7 @@ public class ConsultantService : IConsultationService
             .Include(c => c.ConsultationPayment)
             .FirstOrDefaultAsync(c => c.Id == id);
         
-        return consultation == null ? null : _mapper.Map<ConsultationDto>(consultation);
+        return consultation == null ? null : _mapper.Map<ConsultationWithDetailsDto>(consultation);
     }
 
     public async Task<IEnumerable<ConsultationDto>> GetConsultationsByDoctorAsync(int doctorId)
