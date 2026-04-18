@@ -1,6 +1,7 @@
 using HospitalManagementApi.Domain.Entities;
 using HospitalManagementApi.Infrastructure.Data;
 using HospitalManagementApi.Infrastructure.Repositories;
+using HospitalManagementApi.Application.Service;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,16 @@ public static class ServiceRegistration
         services.AddScoped<IRepository<Test>, Repository<Test>>();
         services.AddScoped<IRepository<Payment>, Repository<Payment>>();
         services.AddScoped<IRepository<Report>, Repository<Report>>();
+
+        services.AddScoped<IPatientService, PatientService>();
+        services.AddScoped<IDoctorService, DoctorService>();
+        services.AddScoped<IAppointmentService, AppointmentService>();
+        services.AddScoped<IConsultationService, ConsultantService>();
+        services.AddScoped<ITestService, TestService>();
+        services.AddScoped<IReportService, ReportService>();
+        services.AddScoped<IAppointmentPaymentService, AppointmentPaymentService>();
+        services.AddScoped<IConsultationPaymentService, ConsultationPaymentService>();
+        services.AddScoped<ITestPaymentService, TestPaymentService>();
 
         return services;
     }
