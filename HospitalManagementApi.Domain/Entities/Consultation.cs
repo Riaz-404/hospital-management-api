@@ -16,5 +16,6 @@ public class Consultation: BaseEntity
     public Patient Patient { get; set; } = null!;
     public Doctor Doctor { get; set; } = null!; 
     public Appointment Appointment { get; set; } = null!;
+    public ConsultationPayment? ConsultationPayment { get; set; } = null!;
     public ICollection<Test> Tests { get; set; } =  new List<Test>();
 }

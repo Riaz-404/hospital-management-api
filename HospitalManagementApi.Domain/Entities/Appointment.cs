@@ -7,7 +7,6 @@ public class Appointment: BaseEntity
 {
     public int PatientId { get; set; }
     public int DoctorId { get; set; }
-    public int? ConsultationId { get; set; }
 
     public string Purpose { get; set; } = string.Empty;
     public DateTime ScheduledAt { get; set; }
@@ -15,4 +14,5 @@ public class Appointment: BaseEntity
     public Patient Patient { get; set; } = null!;
     public Doctor Doctor { get; set; } = null!;
     public Consultation? Consultation { get; set; }
+    public AppointmentPayment? AppointmentPayment { get; set; } = null!;
 }

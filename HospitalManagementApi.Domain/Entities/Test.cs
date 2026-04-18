@@ -11,4 +11,6 @@ public class Test: BaseEntity
 
     public Consultation Consultation { get; set; } = null!;
     public Patient Patient { get; set; } = null!;
+    public Report? Report { get; set; } = null!;
+    public TestPayment? TestPayment { get; set; } = null!;
 }
