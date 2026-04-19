@@ -5,7 +5,7 @@
 ![.NET Version](https://img.shields.io/badge/.NET-10.0-purple)
 ![API Version](https://img.shields.io/badge/API-v1.0-green)
 
-A professional-grade **REST API** for managing hospital operations including patients, doctors, appointments, consultations, tests, payments, and medical reports. Built with **ASP.NET Core 8**, **Entity Framework Core**, and **Clean Architecture** principles.
+A professional-grade **REST API** for managing hospital operations including patients, doctors, appointments, consultations, tests, payments, and medical reports. Built with **ASP.NET Core 10**, **Entity Framework Core**, and **Clean Architecture** principles.
 
 ## 📋 Table of Contents
 
@@ -32,12 +32,12 @@ The Hospital Management System API is a comprehensive backend solution designed 
 
 ### Key Benefits
 
-✅ **Professional Architecture** - Clean Architecture with 4 distinct layers
-✅ **Scalable Design** - Async/await throughout for high performance
-✅ **Enterprise Features** - Logging, validation, error handling
-✅ **API Documentation** - Swagger/OpenAPI integration
-✅ **Database Flexibility** - Code-first migrations with EF Core
-✅ **Type Safety** - Strong typing with C# 8.0+
+- ✅ **Professional Architecture** - Clean Architecture with 4 distinct layers
+- ✅ **Scalable Design** - Async/await throughout for high performance
+- ✅ **Enterprise Features** - Logging, validation, error handling
+- ✅ **API Documentation** - Swagger/OpenAPI integration
+- ✅ **Database Flexibility** - Code-first migrations with EF Core
+- ✅ **Type Safety** - Strong typing with C# 8.0+
 
 ---
 
@@ -164,11 +164,11 @@ The Hospital Management System API is a comprehensive backend solution designed 
 
 ### SOLID Principles
 
-✅ **Single Responsibility** - Each class has one reason to change
-✅ **Open/Closed** - Open for extension, closed for modification
-✅ **Liskov Substitution** - Implementations are substitutable
-✅ **Interface Segregation** - Clients depend on specific interfaces
-✅ **Dependency Inversion** - Depend on abstractions, not concretions
+- ✅ **Single Responsibility** - Each class has one reason to change
+- ✅ **Open/Closed** - Open for extension, closed for modification
+- ✅ **Liskov Substitution** - Implementations are substitutable
+- ✅ **Interface Segregation** - Clients depend on specific interfaces
+- ✅ **Dependency Inversion** - Depend on abstractions, not concretions
 
 ---
 
@@ -986,19 +986,19 @@ For questions or issues:
 
 ## ✨ Key Highlights
 
-✅ Clean Architecture with SOLID principles
-✅ Comprehensive input validation
-✅ Global exception handling
-✅ Automatic API documentation (Swagger)
-✅ Database migrations support
-✅ Async/await throughout
-✅ Unit testable architecture
-✅ Professional error responses
-✅ Structured logging
-✅ Easy to extend and maintain
+- ✅ Clean Architecture with SOLID principles
+- ✅ Comprehensive input validation
+- ✅ Global exception handling
+- ✅ Automatic API documentation (Swagger)
+- ✅ Database migrations support
+- ✅ Async/await throughout
+- ✅ Unit testable architecture
+- ✅ Professional error responses
+- ✅ Structured logging
+- ✅ Easy to extend and maintain
 
 ---
 
-**Last Updated:** May 2024
-**Version:** 1.0.0
-**Status:** Production Ready ✅
+- **Last Updated:** May 2024
+- **Version:** 1.0.0
+- **Status:** Production Ready ✅
