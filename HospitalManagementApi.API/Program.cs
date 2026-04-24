@@ -50,7 +50,7 @@ app.MapGet("/health", () => Results.Ok(new { status = "Healthy", timestamp = Dat
    .Produces(StatusCodes.Status200OK);
 
 // ==================== Default Endpoint ====================
-app.MapGet("/", () => Results.Ok(new { message = "Welcome to the Hospital Management API" }))
-   .Produces(StatusCodes.Status200OK);
+// app.MapGet("/", () => Results.Ok(new { message = "Welcome to the Hospital Management API" }))
+//    .Produces(StatusCodes.Status200OK);
 
 app.Run();
